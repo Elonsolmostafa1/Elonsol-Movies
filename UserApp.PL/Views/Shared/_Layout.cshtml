@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UserApp.PL</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("CustomProfileCSS", required: false)
+    @RenderSection("CustomSliderCSS", required: false)
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-navbar box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand navbar-brand logo-font border border-1 px-2 rounded " asp-area="" asp-controller="UserHome" asp-action="Index">E<span class="text-info">l</span>onso<span class="text-info">l</span></a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
+                    <ul class="navbar-nav flex-grow-1 text-white">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="UserHome" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Actor" asp-action="Index">Actors</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Profile" asp-action="Index">Profile</a>
+                        </li>
+
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.easing.1.3.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.skitter.min.js" asp-append-version="true"></script>
+    <script src="~/js/slider.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

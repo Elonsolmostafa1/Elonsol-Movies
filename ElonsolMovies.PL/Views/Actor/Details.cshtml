@@ -1,0 +1,24 @@
+﻿@model ActorViewModel
+@{
+    ViewData["Title"] = "Detials";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p class="border border-1 p-3 text-center h1 bg-white">Actor Details</p>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 px-5">
+            <img class="w-100 border border-3 rounded" src="~/files/Images/ActorImages/@Model.ActorImage" alt="">
+        </div>
+        <div class="col-md-8 px-5">
+            <h2 class="mb-4 border border-2 text-center rounded py-2">@Model.Name</h2>
+            <div class="border rounded p-3">
+                <p class="fw-semibold fs-5 border text-center py-2 rounded">Biography</p>
+                <p class="px-1 text-muted">@Model.Biography</p>
+                <a asp-action="Update" asp-controller="Actor" asp-route-id="@Model.ID" class="btn btn-primary my-2">Edit Actor</a> | <a asp-controller="Actor" asp-action="Index" class="text-decoration-none text-secondary">Back to actors list</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

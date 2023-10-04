@@ -1,0 +1,26 @@
+﻿@model MovieActorViewModel
+@{
+    ViewData["Title"] = "AddMovieActor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    var actors = new SelectList(ViewBag.AvailableActors, "ID", "Name");
+}
+<div class="bg-light w-75 border p-3 mx-auto my-5 rounded">
+        <p class="border border-1 p-3 text-center h1 bg-white">Add New Actor To This Movie</p>
+
+
+    <form asp-action="AddMovieActor" method="post">
+            
+            <div class="form-group">
+                <label class="col-form-label">Actors</label>
+                <input asp-for="MovieId" type="hidden" />
+                <select class="form-control" asp-for="ActorId"  asp-items="@actors"></select>
+            
+            </div>
+
+            
+            <input type="submit" value="Add Actor" class="btn btn-primary">
+    
+        </form>
+</div>

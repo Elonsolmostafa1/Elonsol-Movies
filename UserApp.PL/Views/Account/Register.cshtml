@@ -1,0 +1,23 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+
+<form asp-action="Register" method="post" enctype="multipart/form-data">
+    <h3 class="py-5">Welcome To Elonsol Movies</h3>
+    <input asp-for="UserName" class="auth-input p-2 py-2 rounded w-100 mx-auto d-block mb-3 " placeholder="Enter Your Name">
+    <input asp-for="Email" class="auth-input p-2 py-2 rounded w-100 mx-auto d-block mb-3 " placeholder="Enter Your Email">
+    <input asp-for="Password" class="auth-input p-2 py-2 rounded w-100 mx-auto d-block mb-3" placeholder="Enter Your Password">
+    <input asp-for="PhoneNumber" class="auth-input p-2 py-2 rounded w-100 mx-auto d-block mb-3 " placeholder="Enter Your Phone Number">
+    <input asp-for="Pic" class="auth-input p-2 py-2 rounded w-100 mx-auto d-block mb-3 " placeholder="Choose Your Profile Pic">
+    <input type="submit" class="btn btn-primary py-2 mt-3 mb-5 w-100" value="Sign Up">
+    <p>Already have account? <a asp-controller="Account" asp-action="Login" class="text-decoration-none text-primary pointer"> Sign In Now</a></p>
+</form>
+
+
+
+@section CustomAuthCSS {
+    <link rel="stylesheet" type="text/css" href="~/css/auth.css" />
+}
+

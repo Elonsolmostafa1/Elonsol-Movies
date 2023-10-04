@@ -1,0 +1,40 @@
+﻿
+
+.text-light-gray {
+    color: rgb(212, 210, 210) !important;
+}
+
+.form-layer {
+    border-radius: 15px !important;
+    padding: 10px 30px 40px 30px !important;
+}
+
+.form-width {
+    width: 35%;
+}
+
+.auth-input {
+    background-color: rgb(242, 242, 243);
+}
+
+.auth-input:focus {
+    color: #1c4165;
+    background-color: #ffffff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(32, 121, 217, 0.35);
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .form-width {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .form-width {
+        width: 75%;
+    }
+}

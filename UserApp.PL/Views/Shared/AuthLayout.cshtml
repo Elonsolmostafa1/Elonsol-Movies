@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UserApp.PL</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("CustomAuthCSS", required: false)
+
+</head>
+<body>
+    <div class="user-auth-header min-vh-100">
+        <a class="logo-font border border-1 px-2 rounded position-fixed m-2 ">E<span class="text-info">l</span>onso<span class="text-info">l</span></a>
+        <div class="layer min-vh-100 d-flex justify-content-center align-items-center">
+            <div class="form-layer border shadow px-5 pt-0 rounded form-width text-center text-white ">
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿@model MovieViewModel
+
+@{
+    ViewData["Title"] = "MovieActors";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p class="border border-1 p-3 text-center h1 bg-white">Movie Actors</p>
+
+<div class="my-5">
+    <a asp-controller="Movie" asp-action="AddMovieActor" asp-route-id="@Model.Id" class="text-decoration-none btn btn-primary">Add Actor To This Movie</a>
+    @if(ViewBag.MovieActors.Count > 0)
+    {
+        <table class="table table-bordered text-center table-striped my-3">
+            <thead>
+            <th>Actor</th>
+
+            <th>Details</th>
+            <th>Delete</th>
+            </thead>
+
+            <tbody>
+                @foreach (var actor in ViewBag.MovieActors)
+                {
+                    <tr>
+                        <td>@actor.Name</td>
+                        <td><a class="btn btn-success" asp-controller="Actor" asp-action="Details" asp-route-id="@actor.ID">Details</a></td>
+                        <td class="text-light">
+                            <form asp-action="DeleteMovieActor" asp-route-actorId="@actor.ID" asp-route-movieId="@Model.Id" method="post">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+
+    }
+    else 
+    {
+        <h6 class="text-center my-5">No Actors Found</h6>
+    }
+</div>

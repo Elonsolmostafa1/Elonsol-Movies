@@ -1,0 +1,77 @@
+﻿@using Newtonsoft.Json;
+@model IEnumerable<ActorViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form asp-action="Index">
+    <div class="d-flex justify-content-center align-items-center my-5 mx-auto d-block">
+
+        <div class="pr-3 p w-75">
+            <input class="form-control" placeholder="Search...." name="SearchValue" />
+        </div>
+
+        <div>
+            <input value="Search" type="submit" class="btn btn-info" />
+        </div>
+
+    </div>
+</form>
+
+
+
+@* Modal Section *@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete Actor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="h4 pb-1 mb-0">Are you sure you want to delete it</p>
+                <p class="font-weight-lighter pt-0 mt-0">You won't be able to revert this!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="delete_button" type="button" class="btn btn-danger">Delete it</button>
+            </div>
+        </div>
+    </div>
+</div>
+@* Modal Section *@
+
+<div class="container my-5">
+    <a asp-action="Create" class="btn btn-primary mb-3 ml-2">Create New Actor</a>
+    <div class="row g-5">
+       @foreach(var actor in Model)
+        {
+             <div class="col-md-4 col-lg-3 col-sm-6 px-4 ">
+            <div class="actor px-0 shadow-sm border border-2 rounded overflow-hidden position-relative">
+                <img class=" w-100" src="~/files/Images/ActorImages/@actor.ActorImage" alt="">
+                <div class="actor-layer d-flex justify-content-center align-items-center rounded position-absolute h-100">
+                    <div class="text-white ">
+                        <div class="mx-auto text-center">
+                                <a class="text-decoration-none text-white" asp-controller="Actor" asp-action="Details" asp-route-id="@actor.ID"><i class="pointer actor-details fa-solid fa-circle-info px-1"></i></a>
+                                <a class="text-decoration-none text-white" asp-controller="Actor" asp-action="Update" asp-route-id="@actor.ID"><i class="pointer actor-edit fa-solid fa-pen-to-square px-1"></i></a>
+                                <a class="text-decoration-none text-white pointer"><i class="actor-delete fa-solid fa-trash-can px-1 pointer" actor-id="@actor.ID" data-toggle="modal" data-target="#exampleModal"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <p class="text-center fw-semibold">@actor.Name</p>
+        </div>
+        }
+
+    </div>
+</div>
+
+
+@section CustomActorCSS {
+    <link rel="stylesheet" type="text/css" href="~/css/actor.css" />
+}

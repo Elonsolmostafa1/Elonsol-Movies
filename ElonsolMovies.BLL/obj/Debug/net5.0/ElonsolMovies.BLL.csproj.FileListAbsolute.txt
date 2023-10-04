@@ -1,0 +1,15 @@
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.csproj.AssemblyReference.cache
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.AssemblyInfoInputs.cache
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.AssemblyInfo.cs
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.csproj.CoreCompileInputs.cache
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\bin\Debug\net5.0\ElonsolMovies.BLL.deps.json
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\bin\Debug\net5.0\ElonsolMovies.BLL.dll
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\bin\Debug\net5.0\ElonsolMovies.BLL.pdb
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\bin\Debug\net5.0\ElonsolMovies.DAL.dll
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\bin\Debug\net5.0\ElonsolMovies.DAL.pdb
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.csproj.CopyComplete
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.dll
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\refint\ElonsolMovies.BLL.dll
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ElonsolMovies.BLL.pdb
+E:\Dot Net\ElonsolMovies\ElonsolMovies.BLL\obj\Debug\net5.0\ref\ElonsolMovies.BLL.dll

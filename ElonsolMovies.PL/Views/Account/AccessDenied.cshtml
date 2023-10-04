@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "AccessDenied";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div class="vh-100 overflow-hidden d-flex justify-content-center align-items-center ">
+        <div class="col-md-5 p-5 shadow-sm border shadow rounded border-secondary bg-white">
+            <h2 class="text-center text-danger">Not this time, access forbidden!</h2>
+            <a class="btn btn-secondary mx-auto w-100 d-block mt-4" asp-action="Logout" asp-controller="Account">Login Now</a>
+        </div>
+    </div>
+        </body>
+</html>
+

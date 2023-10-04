@@ -1,0 +1,59 @@
+﻿@model IEnumerable<MovieViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="Index">
+    <div class="d-flex justify-content-center align-items-center my-5 mx-auto d-block">
+
+        <div class="pr-3 p w-75">
+            <input class="form-control" placeholder="Search...." name="SearchValue" />
+        </div>
+
+        <div>
+            <input value="Search" type="submit" class="btn btn-info" />
+        </div>
+
+    </div>
+</form>
+
+
+<div class="container mt-3">
+    <a asp-action="Create" class="btn btn-primary mb-3">Create New Movie</a> 
+    <table class="table table-bordered text-center table-striped">
+        <thead>
+            <th>Movie</th>
+            <th class="d-none d-md-table-cell">Year</th>
+            <th class="d-none d-md-table-cell">Genre</th>
+            <th class="d-none d-md-table-cell">Director</th>
+            <th>Details</th>
+            <th>Actors</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td class="text-left ">
+                        <div class="d-flex align-items-center">
+                            <img class="d-none d-md-inline" src="~/files/Images/MovieImages/@movie.Poster" width="30" alt="UserImage" />
+                            <p class="h6 px-2">@movie.Name</p>
+                        </div>
+                    </td>
+                    <td class="d-none d-md-table-cell">@movie.PublishYear</td>
+                    <td class="d-none d-md-table-cell">@movie.genre</td>
+                    <td class="d-none d-md-table-cell">@movie.Director</td>
+                    <td class="text-light"><a class="btn btn-success" asp-controller="Movie" asp-action="Details" asp-route-id="@movie.Id">Details</a></td>
+                        <td class="text-light"><a class="btn btn-info" asp-controller="Movie" asp-action="MovieActors" asp-route-id="@movie.Id">Actors</a></td>
+                    <td class="text-light"><a class="btn btn-warning" asp-controller="Movie" asp-action="Update" asp-route-id="@movie.Id">Update</a></td>
+                    <td class="text-light"><a class="btn btn-danger" asp-controller="Movie" asp-action="Delete" asp-route-id="@movie.Id">Delete</a></td>
+                </tr>
+
+            }
+            
+        </tbody>
+    </table>
+</div>

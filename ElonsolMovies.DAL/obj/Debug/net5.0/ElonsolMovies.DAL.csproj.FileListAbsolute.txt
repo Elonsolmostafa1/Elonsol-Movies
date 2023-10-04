@@ -1,0 +1,12 @@
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\bin\Debug\net5.0\ElonsolMovies.DAL.deps.json
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\bin\Debug\net5.0\ElonsolMovies.DAL.dll
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\bin\Debug\net5.0\ElonsolMovies.DAL.pdb
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ElonsolMovies.DAL.csproj.AssemblyReference.cache
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ElonsolMovies.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ElonsolMovies.DAL.AssemblyInfoInputs.cache
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ElonsolMovies.DAL.AssemblyInfo.cs
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ElonsolMovies.DAL.csproj.CoreCompileInputs.cache
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ElonsolMovies.DAL.dll
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\refint\ElonsolMovies.DAL.dll
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ElonsolMovies.DAL.pdb
+E:\Dot Net\ElonsolMovies\ElonsolMovies.DAL\obj\Debug\net5.0\ref\ElonsolMovies.DAL.dll

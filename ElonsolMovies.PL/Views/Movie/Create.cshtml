@@ -1,0 +1,48 @@
+﻿@model MovieViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="bg-light w-75 border p-3 mx-auto my-5 rounded">
+    <p class="border border-1 p-3 text-center h1 bg-white">Create New Movie</p>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="d-flex">
+            <div class="form-group my-3 w-50 pr-2">
+                <input class="form-control" asp-for="Name" placeholder="Enter Movie Name">
+            </div>
+            <div class="form-group my-3 w-50 pl-2">
+                <input class="form-control" asp-for="genre" placeholder="Enter Movie Genre">
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="form-group my-0 w-50 pr-2">
+                <input class="form-control" asp-for="Director" placeholder="Enter Movie Director">
+            </div>
+            <div class="form-group my-0 w-50 pl-2">
+                <input class="form-control" asp-for="Writer" placeholder="Enter Movie Writer">
+            </div>
+        </div>
+
+        <div class="form-group my-3">
+            <input class="form-control" asp-for="PublishYear" placeholder="Enter Movie Publish Year">
+        </div>
+        <div class="form-group my-3">
+            <input class="form-control" asp-for="CoverImage" placeholder="Enter Movie Cover">
+        </div>
+        <div class="form-group my-3">
+            <input class="form-control" asp-for="PosterImage" placeholder="Enter Movie Poster">
+        </div>
+
+        <div class="form-group my-3">
+            <input class="form-control" asp-for="TrailerLink" placeholder="Choose Movie Trailer Link">
+        </div>
+
+        <div class="form-group my-3">
+            <textarea rows="5" class="form-control" asp-for="Description" placeholder="Enter Movie Description"></textarea>
+        </div>
+
+        <input type="submit" value="Create Movie" class="btn btn-primary">
+
+    </form>
+</div>

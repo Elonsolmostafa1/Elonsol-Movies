@@ -1,0 +1,26 @@
+﻿.actor:hover .actor-layer {
+    top: 0 !important
+}
+
+.actor-layer {
+    transition: all 1s;
+    top:100%;
+    bottom:0%;
+    background-color:rgba(0,0,0,0.5);
+    left:0;
+    right:0;
+   
+}
+
+.actor-details:hover {
+    color: rgb(153, 234, 95) !important;
+}
+
+.actor-edit:hover {
+    color: rgb(223, 242, 99) !important;
+}
+
+.actor-delete:hover {
+    color: rgb(236, 81, 81) !important;
+    cursor:pointer;
+}

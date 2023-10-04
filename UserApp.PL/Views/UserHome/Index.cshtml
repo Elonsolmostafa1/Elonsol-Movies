@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MovieViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container my-5">
+
+
+    <div class="skitter skitter-large w-100 mx-auto mb-5" style="width:100%">
+        <ul>
+            @foreach (var movie in Model)
+            {
+                <li>
+                    <a href="#cut">
+                        <img src="https://localhost:44383/StaticFiles/@movie.Cover" class="cubeShow" />
+                    </a>
+                    <div class="label_text">
+                        <p>
+                            @movie.Name
+                            <a asp-controller="UserHome" asp-action="Details" asp-route-id="@movie.Id" class="btn btn-xs btn-warning ml-4">See more</a>
+                        </p>
+                    </div>
+                </li>
+            }
+            
+            
+        </ul>
+    </div>
+
+
+
+    <div class="row gy-3">
+        @foreach(var movie in Model)
+        {
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                     <a class="text-decoration-none" asp-action="Details" asp-controller="UserHome" asp-route-id="@movie.Id">
+                        <div class=" mb-3">
+                            <img src="https://localhost:44383/StaticFiles/@movie.Poster" class="w-100 movieImg" alt="Movie Image">
+                        </div>
+                    </a>
+                </div>
+        }
+        
+
+
+    </div>
+</div>
+
+
+
+
+@section CustomSliderCSS {
+    <link rel="stylesheet" type="text/css" href="~/css/skitter.css" />
+}

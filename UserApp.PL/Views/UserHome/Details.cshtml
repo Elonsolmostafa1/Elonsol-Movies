@@ -1,0 +1,47 @@
+﻿@model MovieViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="header rounded shadow mt-5" style="background-image: url(https://localhost:44383/StaticFiles/@Model.Cover);">
+    <div class="layer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="p-5">
+                        <img class="w-100 rounded" src="https://localhost:44383/StaticFiles/@Model.Poster" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 py-5 pl-3 pr-5 text-white">
+                    <div class="pt-4">
+                        <h2>@Model.Name <span class="text-light-gray">(@Model.PublishYear)</span></h2>
+                        <span class="badge bg-info mb-5">@Model.genre</span>
+                        <a class="badge bg-primary mb-5 mx-2 text-decoration-none text-white" href="@Model.TrailerLink" target="_blank">Watch Trailer Now</a>
+                        <a class="badge bg-secondary mb-5 text-decoration-none text-white" asp-action="Actors" asp-controller="UserHome" target="_blank">Actros</a>
+
+
+                        <p class="h4 fw-bold">Overview</p>
+                        <p class="text-light-gray">@Model.Description</p>
+
+                        <div class="d-flex">
+                            <div class="me-5">
+                                <p class="font-weight-bold mt-5 mb-0">@Model.Director</p>
+                                <p class="font-weight-lighter my-0"> Director</p>
+                            </div>
+
+                            <div class="ml-5">
+                                <p class="font-weight-bold mt-5 mb-0">@Model.Writer</p>
+                                <p class="font-weight-lighter my-0"> Writer</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

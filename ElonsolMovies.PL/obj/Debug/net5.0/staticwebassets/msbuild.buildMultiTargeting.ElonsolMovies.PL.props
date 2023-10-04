@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ElonsolMovies.PL.props" />
+</Project>

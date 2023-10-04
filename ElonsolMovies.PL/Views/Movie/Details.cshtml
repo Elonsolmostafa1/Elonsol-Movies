@@ -1,0 +1,27 @@
+﻿@model MovieViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 p-5">
+            <img src="~/files/Images/MovieImages/@Model.Poster" class="w-100 rounded" alt="">
+        </div>
+        <div class="col-md-8 p-5">
+            <h3 class="border border-2 rounded p-2 text-center">@Model.Name</h3>
+            <div class="border rounded border-2 p-4">
+                <p class="h5 py-1">Overview</p>
+                <p class="text-muted pt-0 mt-0">@Model.Description</p>
+                <p class="h6 py-1">Publish Year: <span class="text-muted">@Model.PublishYear</span></p>
+                <p class="h6 py-1">Genre: <span class="text-muted">@Model.genre</span></p>
+                <p class="h6 py-1">Director: <span class="text-muted">@Model.Director</span></p>
+                <p class="h6 py-1">Writer: <span class="text-muted">@Model.Writer</span></p>
+                <a href="@Model.TrailerLink" target="_blank" class="btn btn-primary my-2">Watch Trailer Now</a>
+                <a asp-action="Update" asp-controller="Movie" asp-route-id="@Model.Id" class="btn btn-secondary my-2">Edit Movie</a>
+            </div>
+        </div>
+    </div>
+</div>

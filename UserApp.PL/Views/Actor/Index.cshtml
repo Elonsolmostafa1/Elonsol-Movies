@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ActorViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="Index">
+    <div class="d-flex justify-content-center align-items-center my-5 mx-auto d-block">
+
+        <div class="pr-3 p w-75">
+            <input class="form-control" placeholder="Search...." name="SearchValue" />
+        </div>
+
+        <div>
+            <input value="Search" type="submit" class="btn btn-info" />
+        </div>
+
+    </div>
+</form>
+
+
+
+
+
+<div class="container my-5">
+    <div class="row g-5">
+        @foreach (var actor in Model)
+        {
+            <div class="col-md-3 col-lg-2 col-sm-6 px-4 movieImg">
+                <a asp-action="Details" asp-controller="Actor" asp-route-id="@actor.ID" class="text-decoration-none actor pointer px-0 shadow-sm border border-2 border-dark rounded overflow-hidden position-relative">
+                    <img class=" w-100" src="https://localhost:44383/StaticFiles/@actor.ActorImage" alt="">
+                </a>
+                <p class="text-center text-light fw-semibold">@actor.Name</p>
+            </div>
+        }
+
+    </div>
+</div>
+
+

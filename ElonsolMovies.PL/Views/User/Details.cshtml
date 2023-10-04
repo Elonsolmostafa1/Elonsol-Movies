@@ -1,0 +1,21 @@
+﻿@model UserViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p class="border border-1 p-3 text-center h1 bg-white">User Details</p>
+<div class="bg-light py-4 text-center profile_width px-3 my-5 mx-auto border rounded shadow">
+
+    <img width="100" src="https://localhost:44306/StaticFiles/@Model.ProfilePic" alt="user img">
+    <p class="fw-semibold mb-0 fs-5 mt-2">@Model.UserName</p>
+    <p class="text-muted mt-0">@Model.Email</p>
+    <p class="text-muted"><span class="fw-semibold text-dark">User ID: </span>@Model.Id</p>
+    <p class="text-muted"><span class="fw-semibold text-dark">Phone Number: </span>@Model.PhoneNumber</p>
+    <a asp-controller="User" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-secondary">Edit User</a>
+</div>
+
+
+@section CustomUserCSS {
+    <link rel="stylesheet" type="text/css" href="~/css/user.css" />
+}

@@ -1,0 +1,19 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+
+<form asp-action="Login" method="post">
+    <h3 class="py-5">Welcome To Elonsol Movies</h3>
+    <input asp-for="Email" class="auth-input p-2 py-2 rounded w-100 mx-auto d-block mb-3 " placeholder="Enter Your Email" >
+    <input asp-for="Password" class="auth-input p-2 py-2 rounded w-100 mx-auto d-block mb-3" placeholder="Enter Your Password" >
+    <input type="submit" class="btn btn-primary py-2 mt-3 mb-5 w-100" value="Sign In">
+    <p>Don't have account? <a asp-controller="Account" asp-action="Register" class="text-decoration-none text-primary pointer"> Sign Up Now</a></p>
+</form>
+        
+
+
+@section CustomAuthCSS {
+    <link rel="stylesheet" type="text/css" href="~/css/auth.css" />
+}

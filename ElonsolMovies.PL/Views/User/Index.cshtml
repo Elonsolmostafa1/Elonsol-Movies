@@ -1,0 +1,60 @@
+﻿@model IEnumerable<UserViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="border border-1 text-center text-uppercase">All Users</h1>
+
+<form asp-action="Index">
+    <div class="d-flex justify-content-center align-items-center my-5 mx-auto d-block">
+
+        <div class="pr-3 p w-75">
+            <input class="form-control" placeholder="Search...." name="SearchValue" />
+        </div>
+
+        <div>
+            <input value="Search" type="submit" class="btn btn-info" />
+        </div>
+
+    </div>
+</form>
+
+<a asp-action="Create" class="btn btn-primary">Create New User</a>
+@if (Model?.Count() > 0)
+{
+    <table class="table table-striped table-hover my-3 border border-1">
+        <thead>
+        <th class="d-none d-md-table-cell">@Html.DisplayNameFor(U=> U.UserName)</th>
+        <th>@Html.DisplayNameFor(U=> U.Email)</th>
+        <th class="d-none d-md-table-cell">@Html.DisplayNameFor(U=> U.ProfilePic)</th>
+        <th class="d-none d-md-table-cell">@Html.DisplayNameFor(U=> U.Roles)</th>
+        <th>Details</th>
+        <th>Upadate</th>
+        <th>Delete</th>
+        </thead>
+        <tbody>
+
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td class="d-none d-md-table-cell">@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td class="d-none d-md-table-cell"> 
+                        <img src="https://localhost:44306/StaticFiles/@user.ProfilePic" width="40" alt="UserImage" />
+                    </td>
+                    <td class="d-none d-md-table-cell">@string.Join(",",user.Roles.ToList())</td>
+                    <td class="text-light"><a class="btn btn-success" asp-controller="User" asp-action="Details" asp-route-id="@user.Id">Details</a></td>
+                    <td class="text-light"><a class="btn btn-warning" asp-controller="User" asp-action="Update" asp-route-id="@user.Id">Update</a></td>
+                    <td class="text-light"><a class="btn btn-danger" asp-controller="User" asp-action="Delete" asp-route-id="@user.Id">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+else
+{
+    <h6 class="text-center my-5">No Users Found</h6>
+}
+

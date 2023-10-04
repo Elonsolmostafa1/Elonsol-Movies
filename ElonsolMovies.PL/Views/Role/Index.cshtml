@@ -1,0 +1,40 @@
+﻿@model IEnumerable<IdentityRole>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="border border-1 text-center text-uppercase">All User Roles</h1>
+
+<div class="my-4">
+    <Partial name="AddRoleForm" model="new AddRoleViewModel()" ></Partial>
+</div>
+
+@if(Model.Count()>0)
+{
+    <table class="table table-bordered text-center table-striped my-3">
+        <thead>
+        <th>Name</th>
+        <th>Update</th>
+        <th>Delete</th>
+        </thead>
+
+        <tbody>
+            @foreach (var role in Model)
+            {
+                <tr>
+                    <td>@role.Name</td>
+                    <td class="text-light"><a asp-action="Update" asp-route-id="@role.Id" class="btn btn-warning">Update</a></td>
+                    <td class="text-light"><a asp-action="Delete" asp-route-id="@role.Id" class="btn btn-danger">Delete</a></td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
+
+else
+{
+    <h6 class="text-center my-5">No Roles Found</h6>
+}
+

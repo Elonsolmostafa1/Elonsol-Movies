@@ -1,0 +1,37 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+
+@* <div class="w-50 my-5 shadow mx-auto p-5 rounded border border-1">
+    <p class="border border-2 h2 rounded text-center p-3">Login Now</p>
+    <form asp-action="Login" method="post">
+        <input class="form-control my-3" asp-for="Email" placeholder="Enter Your Email">
+        <input class="form-control" asp-for="Password" placeholder="Enter Your Password">
+        <input type="submit" value="Login" class="btn btn-primary my-3 w-100">
+    </form>
+</div>
+ *@
+
+<div class="vh-100 overflow-hidden d-flex justify-content-center align-items-center ">
+    <div class="col-md-5 p-5 shadow-sm border shadow rounded border-secondary bg-white">
+        <h2 class="text-center mb-4">ADMIN LOGIN</h2>
+        <form asp-action="Login" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input asp-for="Email" placeholder="Enter Your Email" class="form-control border border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input asp-for="Password" placeholder="Enter Your Password" class="form-control border border-secondary" id="exampleInputPassword1">
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-danger w-100" type="submit">Login</button>
+            </div>
+        </form>
+        <div class="mt-3">
+        </div>
+    </div>
+</div>
+
