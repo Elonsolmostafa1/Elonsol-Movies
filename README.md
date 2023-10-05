@@ -1,7 +1,3 @@
-Certainly, adding sections for screenshots and videos to your README can greatly enhance its visual appeal and help users understand your project better. Below is an extended version of the README template that includes sections for screenshots and videos for all app pages:
-
----
-
 # Movie App
 
 **Movie App** is an ASP.NET MVC project that follows a 3-tier architecture, designed for managing movies, actors, and user accounts. This application features two presentation layers: the **Admin Dashboard** and the **User App**, each serving different roles and functions.
@@ -154,7 +150,7 @@ To run the application locally, follow these steps:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/movie-app.git
+   git clone https://github.com/your-username/movie-app.git](https://github.com/Elonsolmostafa1/Elonsol-Movies.git)
    ```
 
 2. Open the solution in Visual Studio or your preferred IDE.
