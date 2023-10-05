@@ -57,16 +57,53 @@
 ### Admin Dashboard
 
 - **User Management**
-  - ![User Management](path/to/user-management.png)
+
+![Login](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/78fe7bae-dfa6-4787-b0c6-d79b27cb6d1d)
+
+![Users GetAll](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/207cc30f-d942-4df4-bd37-1717e99f9cfc)
+
+![User Details](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/76672999-69f6-4d3c-8769-69eb19314039)
+
+![User Update](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/1559d834-529a-4bb0-b5f6-63cd8d4ac1eb)
+
+![User Delete](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/bef0a145-e731-495a-9e4d-6dcaf92ffbdf)
+
 
 - **Actor Management**
-  - ![Actor Management](path/to/actor-management.png)
+
+![Actors](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/64579dc5-f40c-4d2e-b164-ffe147c3238c)
+
+![Actor Details](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/88e9d268-ad6b-4350-91d8-9163cfe07b28)
+
+![Actor Update](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/8075d37b-99c0-4e75-88ea-d3f4dc86f161)
+
+![Actor Delete](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/96b98288-9498-4e8b-bf31-bde85a951691)
+
+![Movie Actors](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/94912d63-38e2-4a9d-8b91-3bf17cde0127)
+
+![Movie Actor Add](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/b2e1bea1-6db0-43b1-b2c8-c6bf97329c07)
+
+
 
 - **Movie Management**
-  - ![Movie Management](path/to/movie-management.png)
+
+![Movies](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/2b7b82a7-c3c3-426f-93a9-fbc4d5db58cd)
+
+![Movies Details](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/c086ab09-f1d8-4e14-9b71-73b0f22ac009)
+
+![Movie Update](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/2f566ed4-fc87-4999-a2cf-d4830ed34116)
+
+![Movie Delete](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/c1b2c93e-a681-4b71-93be-a49fc165cf60)
+
+
+
+
 
 - **Role Management**
-  - ![Role Management](path/to/role-management.png)
+
+![Roles](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/a9bafac7-a949-4e90-bcb0-2629948cce10)
+
+![Role Update](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/c0e85306-9a2c-4e0e-9020-4e97a36709b1)
 
 ### User App
 
