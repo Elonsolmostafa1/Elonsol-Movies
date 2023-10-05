@@ -117,6 +117,7 @@
 ![Home 2](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/ff24c9f1-08d5-480e-8d04-352c7cb50e15)
 
 
+
 - **Movie Details**
   
 ![Details 1](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/bf6f7149-adc6-4be7-8994-8534a80ffff5)
