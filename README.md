@@ -55,15 +55,15 @@
 
 - **User Management**
 
-![Login](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/78fe7bae-dfa6-4787-b0c6-d79b27cb6d1d)
+![Login](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/eaee247b-9ee6-4290-bb88-0542f21accc3)
 
-![Users GetAll](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/207cc30f-d942-4df4-bd37-1717e99f9cfc)
+![Users GetAll](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/df4e22cd-493e-4506-8926-3b35607397fb)
 
-![User Details](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/76672999-69f6-4d3c-8769-69eb19314039)
+![User Details](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/510475ce-fe74-43fc-8757-0b1ed28caf1b)
 
-![User Update](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/1559d834-529a-4bb0-b5f6-63cd8d4ac1eb)
+![User Delete](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/e62f974e-d602-461b-aebb-36b34fce60bb)
 
-![User Delete](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/bef0a145-e731-495a-9e4d-6dcaf92ffbdf)
+![User Update](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/379a96b7-82a1-4cb8-a30f-54137aebc77e)
 
 
 - **Actor Management**
