@@ -75,34 +75,39 @@ Certainly, adding sections for screenshots and videos to your README can greatly
 ### User App
 
 - **Login and Register**
+  
 ![Sign Up](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/f4868e3b-2829-4028-87e9-072c4eebd3a9)
 
 ![Login](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/ac2e5efa-24ec-4b01-a026-af449a4f269a)
 
 - **Movie Home**
+  
 ![Home 1](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/fd726775-8ab5-45a0-958a-b53b40c280ab)
 
 ![Home 2](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/ff24c9f1-08d5-480e-8d04-352c7cb50e15)
 
 
 - **Movie Details**
-  ![Details 1](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/bf6f7149-adc6-4be7-8994-8534a80ffff5)
+  
+![Details 1](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/bf6f7149-adc6-4be7-8994-8534a80ffff5)
 
-  ![Details 2](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/29d68ca4-d2a8-41dd-9408-7b88b97a7845)
+![Details 2](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/29d68ca4-d2a8-41dd-9408-7b88b97a7845)
 
-  ![Details 3](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/9e8d5faf-96f4-4355-ab1e-c6fdafb68b2e)
+![Details 3](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/9e8d5faf-96f4-4355-ab1e-c6fdafb68b2e)
 
 
 
 
 - **Actor Directory**
-  ![Actors](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/0cab0dd3-69f8-48f0-8a3a-d91ee4af1ad9)
+  
+![Actors](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/0cab0dd3-69f8-48f0-8a3a-d91ee4af1ad9)
 
 
 - **Actor Details**
-  ![ActorDetail1](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/fea39bf9-43e0-40a7-bb8e-89f90b785879)
+  
+![ActorDetail1](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/fea39bf9-43e0-40a7-bb8e-89f90b785879)
 
-  ![ActorDetail2](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/064108cd-1d53-4382-b47a-6bbbf87b1f6b)
+![ActorDetail2](https://github.com/Elonsolmostafa1/Elonsol-Movies/assets/62807830/064108cd-1d53-4382-b47a-6bbbf87b1f6b)
 
 
 
